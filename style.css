@@ -1,8 +1,19 @@
-/*div.hidden {
+
+div.hidden {
   display: none;
 }
 
-div.unhidden {
+	div.unhidden {
   display: block;
 }
-*/
+
+	#agePercent .agePercentCheckBox {
+	width: 45px;
+	margin: 17px;
+}
+
+	#genderPercent .genderPercentCheckBox
+{
+	width: 30px; 
+	margin: 17px;
+}
