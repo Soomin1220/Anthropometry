@@ -14,15 +14,15 @@
 		<div id = variation>
 			<div id="s1">
 				<div id = nationality>
-					<h3> Nationality </h3>
+					<h4> Nationality </h4>
 						<input type="checkbox" name="korea" value="0" onclick  = "nationality.multiChkCntry('korea', 'add')"> Korea
 						<input type="checkbox" name="china" value="1" onclick  = "nationality.multiChkCntry('china', 'add')" > China
 						<input type="checkbox" name="japan" value="2" onclick  = "nationality.multiChkCntry('japan', 'add')" > Japan
 				</div>
 				<div id= gender>
-					<h3> Gender </h3>
-						<input type="checkbox" name="genderBox" value="male" onclick  = "gender.male_chk(); gender.genChk()"> Male
-						<input type="checkbox" name="genderBox" value="female" onclick  = "gender.female_chk();gender.genChk()"> Female <p>
+					<h4> Gender </h4>
+						<input type="checkbox" class="genderBox" value="male" onclick  = "gender.male_chk(); gender.genChk()"> Male
+						<input type="checkbox" class="genderBox" value="female" onclick  = "gender.female_chk();gender.genChk()"> Female <p>
 
 						<div id = "genderPercent"> 
 							<input type="text" class = "genderPercentCheckBox" name="genderPercent"  value = 0% disabled = "true" >
@@ -30,18 +30,18 @@
 						</div>
 				</div>
 				<div id = age>
-						<h3> Age </h3>
+						<h4> Age </h4>
 							<label> <input type = 'radio' name = 'selectOption' id = 'age_checkSelect' > 선택 </label>
 							<label> <input type = 'radio' name = 'selectOption'id = 'age_typeSelect'> 직접입력 </label> <p>
 					<div id = byCheckBox>
 							<div id = "ageList" class = 'hidden'> 
 							Age:	
-								<input type="checkbox" name="ageList" value="10대이하" onclick = "age.ageChk()" > 10대이하
-								<input type="checkbox" name="ageList" value="20대"  onclick = "age.ageChk()" > 20대
-								<input type="checkbox" name="ageList" value="30대"  onclick = "age.ageChk()" > 30대
-								<input type="checkbox" name="ageList" value="40대"  onclick = "age.ageChk()" > 40대
-								<input type="checkbox" name="ageList" value="50대"  onclick = "age.ageChk()" > 50대
-								<input type="checkbox" name="ageList" value="60대이상"  onclick = "age.ageChk()" > 60이상
+								<input type="checkbox" class="ageList" value="10대이하" onclick = "age.ageChk()" > 10대이하
+								<input type="checkbox" class="ageList" value="20대"  onclick = "age.ageChk()" > 20대
+								<input type="checkbox" class="ageList" value="30대"  onclick = "age.ageChk()" > 30대
+								<input type="checkbox" class="ageList" value="40대"  onclick = "age.ageChk()" > 40대
+								<input type="checkbox" class="ageList" value="50대"  onclick = "age.ageChk()" > 50대
+								<input type="checkbox" class="ageList" value="60대이상"  onclick = "age.ageChk()" > 60이상
 							</div>
 
 							 <div id = "agePercent" class = "hidden"> 

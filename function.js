@@ -14,15 +14,15 @@ function checkEvent ()
 class Age{
 	constructor (){
 
-		var size = document.getElementsByName('ageList').length
+		var size = document.getElementsByClassName('ageList').length
 	}
 	ageChk() {
-		var size = document.getElementsByName('ageList').length;
+		var size = document.getElementsByClassName('ageList').length;
 		this.total_chked =0;
 		var boxChecked = [];
 		for (var i = 0; i < size; i++)
 		{
-			if(document.getElementsByName('ageList')[i].checked == true) // 체크박스가 체크되었을때, 
+			if(document.getElementsByClassName('ageList')[i].checked == true) // 체크박스가 체크되었을때, 
 				{
 					
 					this.total_chked+=1; //total+1하고 
@@ -69,12 +69,12 @@ class Gender {
 	/*alert(this.female); //female 값 확인
 	*/}
 	genChk() {
-		var size = document.getElementsByName('genderBox').length;
+		var size = document.getElementsByClassName('genderBox').length;
 		this.total_chked =0;
 		var boxChecked = [];
 		for (var i = 0; i < size; i++)
 		{
-			if(document.getElementsByName('genderBox')[i].checked == true) 
+			if(document.getElementsByClassName('genderBox')[i].checked == true) 
 				{
 					
 					this.total_chked+=1;
