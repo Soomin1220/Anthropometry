@@ -12,7 +12,13 @@
 	<div id = wrap>
 		<!-- 화면 좌측 '변수 입력 공간'' -->
 		<div id = variation>
-			<div id="s1">
+			<!--block: 값을 입력하는 칸이 등장하게하는 요소-->
+			<!--selection: 사용자가 값을 입력하는 부분-->
+			<div id="s1block" class="block"></div>
+				<!--닫혀있는 블럭에 있는 삼각형버튼: down-->
+				<!--열려있는 블럭에 있는 삼각형버튼: up-->
+				<button type="down"></button>
+			<div id="s1" class="selection">
 				<div id = nationality>
 					<h4> Nationality </h4>
 						<input type="checkbox" name="korea" value="0" onclick  = "nationality.multiChkCntry('korea', 'add')"> Korea
@@ -79,10 +85,18 @@
 
 				<div class = decision></div>
 			</div>
-			<div id="s2"></div>
-			<div id="s3"></div>
-			<div id="s4"></div>
-			<div id="s5"></div>
+			<div id="s2block" class="block"></div>
+				<button type="down"></button>
+			<div id="s2" class="selection"></div>
+			<div id="s3block" class="block"></div>
+				<button type="down"></button>
+			<div id="s3" class="selection"></div>
+			<div id="s4block" class="block"></div>
+				<button type="down"></button>
+			<div id="s4" class="selection"></div>
+			<div id="s5block" class="block"></div>
+				<button type="down"></button>
+			<div id="s5" class="selection"></div>
 		</div>
 		<!-- 화면 우측 '디스플레이 공간'' -->
 		<div id = display></div>
