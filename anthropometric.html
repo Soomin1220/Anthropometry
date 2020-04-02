@@ -12,53 +12,77 @@
 	<div id = wrap>
 		<!-- 화면 좌측 '변수 입력 공간'' -->
 		<div id = variation>
+			<div id="title">DRHM-GAS</div>
 			<!--block: 값을 입력하는 칸이 등장하게하는 요소-->
 			<!--selection: 사용자가 값을 입력하는 부분-->
-			<div id="s1block" class="block"></div>
+			<div id="s1block" class="block">
+				<div id=step_number>STEP1</div>
+				<div id=step_name>Target Population Selection</div>
 				<!--닫혀있는 블럭에 있는 삼각형버튼: down-->
 				<!--열려있는 블럭에 있는 삼각형버튼: up-->
-				<button type="down"></button>
+				<div class="down"></div>	
+			</div>
+				
 			<div id="s1" class="selection">
+				<div class="clear">Clear All</div>
 				<div id = nationality>
-					<h4> Nationality </h4>
-						<input type="checkbox" name="korea" value="0" onclick  = "nationality.multiChkCntry('korea', 'add')"> Korea
-						<input type="checkbox" name="china" value="1" onclick  = "nationality.multiChkCntry('china', 'add')" > China
-						<input type="checkbox" name="japan" value="2" onclick  = "nationality.multiChkCntry('japan', 'add')" > Japan
+					<div class="s1factor_title"> Nationality </div>
+					<table>
+						<tr>
+							<td><input type="checkbox" name="korea" value="0" class="nationality" onclick  = "nationality.multiChkCntry('korea', 'add')">Korea</td>
+							<td><input type="checkbox" name="china" value="1" class="nationality" onclick  = "nationality.multiChkCntry('china', 'add')" >China</td>
+							<td><input type="checkbox" name="japan" value="2" class="nationality" onclick  = "nationality.multiChkCntry('japan', 'add')" >Japan</td>
+
+						</tr>
+					</table>
+
 				</div>
 				<div id= gender>
-					<h4> Gender </h4>
-						<input type="checkbox" class="genderBox" value="male" onclick  = "gender.male_chk(); gender.genChk()"> Male
-						<input type="checkbox" class="genderBox" value="female" onclick  = "gender.female_chk();gender.genChk()"> Female <p>
-
-						<div id = "genderPercent"> 
-							<input type="text" class = "genderPercentCheckBox" name="genderPercent"  value = 0% disabled = "true" >
-							<input type="text" class = "genderPercentCheckBox" name="genderPercent"  value = 0% disabled = "true" >
-						</div>
+					<div class="s1factor_title"> Gender </div>
+					<table>
+						<tr>
+							<td><input type="checkbox" class="genderBox" value="male" onclick  = "gender.male_chk(); gender.genChk()">Male</td>
+							<td><input type="checkbox" class="genderBox" value="female" onclick  = "gender.female_chk();gender.genChk()">Female</td>
+						</tr>
+						<tr>
+							<div id = "genderPercent"> 
+								<td><input type="text" class = "genderPercentCheckBox" name="genderPercent"  value = 0% disabled = "true" ></td>
+								<td><input type="text" class = "genderPercentCheckBox" name="genderPercent"  value = 0% disabled = "true" ></td>
+						</tr>
+					</table>
+		
 				</div>
 				<div id = age>
-						<h4> Age </h4>
-							<label> <input type = 'radio' name = 'selectOption' id = 'age_checkSelect' > 선택 </label>
-							<label> <input type = 'radio' name = 'selectOption'id = 'age_typeSelect'> 직접입력 </label> <p>
+						<div class="s1factor_title"> Age </div>
+							<label> <input type = 'radio' name = 'selectOption' id = 'age_checkSelect' >선택	</label>
+							<label> <input type = 'radio' name = 'selectOption'id = 'age_typeSelect'>직접입력</label>
 					<div id = byCheckBox>
-							<div id = "ageList" class = 'hidden'> 
-							Age:	
-								<input type="checkbox" class="ageList" value="10대이하" onclick = "age.ageChk()" > 10대이하
-								<input type="checkbox" class="ageList" value="20대"  onclick = "age.ageChk()" > 20대
-								<input type="checkbox" class="ageList" value="30대"  onclick = "age.ageChk()" > 30대
-								<input type="checkbox" class="ageList" value="40대"  onclick = "age.ageChk()" > 40대
-								<input type="checkbox" class="ageList" value="50대"  onclick = "age.ageChk()" > 50대
-								<input type="checkbox" class="ageList" value="60대이상"  onclick = "age.ageChk()" > 60이상
-							</div>
+							 
+							<div id = "ageList" class = 'hidden'>
+								<table width="440">
+									<tr>
+										<td>Age:</td>	
+										<td><input type="checkbox" class="ageList" value="10대이하" onclick = "age.ageChk()" > 10대이하</td>
+										<td><input type="checkbox" class="ageList" value="20대"  onclick = "age.ageChk()" >20대</td>
+										<td><input type="checkbox" class="ageList" value="30대"  onclick = "age.ageChk()" >30대</td>
+										<td><input type="checkbox" class="ageList" value="40대"  onclick = "age.ageChk()" >40대</td>
+										<td><input type="checkbox" class="ageList" value="50대"  onclick = "age.ageChk()" >50대</td>
+										<td><input type="checkbox" class="ageList" value="60대이상"  onclick = "age.ageChk()" >60이상</td>
+									</tr>
+								</table>	
 
 							 <div id = "agePercent" class = "hidden"> 
-							(%):
-								<input type="text" class = "agePercentCheckBox" name="agePercent"  value = 0% disabled = "true" >
-								<input type="text" class = "agePercentCheckBox" name="agePercent"  value = 0% disabled = "true" >
-								<input type="text" class = "agePercentCheckBox" name="agePercent"  value = 0% disabled = "true" >
-								<input type="text" class = "agePercentCheckBox" name="agePercent"  value = 0% disabled = "true" >
-								<input type="text" class = "agePercentCheckBox" name="agePercent"  value = 0% disabled = "true" >
-								<input type="text" class = "agePercentCheckBox" name="agePercent"  value = 0% disabled = "true" >
-
+							 	<table width="440">
+							 		<tr>
+							 			<td>(%):</td>
+							 			<td><input type="text" class = "agePercentCheckBox" name="agePercent"  value = 0% disabled = "true" ></td>
+							 			<td><input type="text" class = "agePercentCheckBox" name="agePercent"  value = 0% disabled = "true" ></td>
+							 			<td><input type="text" class = "agePercentCheckBox" name="agePercent"  value = 0% disabled = "true" ></td>
+							 			<td><input type="text" class = "agePercentCheckBox" name="agePercent"  value = 0% disabled = "true" ></td>
+							 			<td><input type="text" class = "agePercentCheckBox" name="agePercent"  value = 0% disabled = "true" ></td>
+							 			<td><input type="text" class = "agePercentCheckBox" name="agePercent"  value = 0% disabled = "true" ></td>
+							 		</tr>
+							 	</table>
 							</div>
 					</div>
 					<!-- byCheckBox ends -->
@@ -69,35 +93,55 @@
 										<input type="text" name="ageRange" style = "width: 30px; margin: 17px"> ~
 										<input type="text" name="ageRange" style = "width: 30px; margin: 17px">
 								</div>
-
-									
 								<div id = "agePercentByOwn" class="hidden"> 
 										Percentage (%):
 										<input type="text" class = "agePercentTextBox" name="agePercentByOwn" style = "width: 30px; margin: 17px">
 
-								</div>
-
-							
+								</div>						
 					</div>
 					<!-- ByInputBox ends -->
+
 				</div>
+				<!--Step1 selecton end-->
+			</div>
+			<!--age end-->
+			<button type="submit" class="s1_save">save</button>
+			<!--S1 end-->
+			<div id="s2block" class="block">
+				<div id=step_number>STEP2</div>
+				<div id=step_name>Anthropometic Variable Selection</div>
+				<div class="down"></div>
+			</div>
 
+			<div id="s2" class="selection"></div>
+			<!--s2 end-->
+			<div id="s3block" class="block">
+				<div id=step_number>STEP3</div>
+				<div id=step_name>Key Dimension Selection</div>
+				<div class="down"></div>
+			</div>
+			<div id="s3" class="selection"></div>
+			<!--s3 end-->
+			<div id="s4block" class="block">
+				<div id=step_number>STEP4</div>
+				<div id=step_name>Grid Formation</div>
+				<div class="down"></div>
+			</div>
 
+			<div id="s4" class="selection"></div>
+			<!--s4 end-->
+			<div id="s5block" class="block">
+				<div id=step_number>STEP5</div>
+				<div id=step_name>DRHM Determination</div>
+				<div class="down"></div>
+			</div>	
+			<div id="s5" class="selection">
 				<div class = decision></div>
 			</div>
-			<div id="s2block" class="block"></div>
-				<button type="down"></button>
-			<div id="s2" class="selection"></div>
-			<div id="s3block" class="block"></div>
-				<button type="down"></button>
-			<div id="s3" class="selection"></div>
-			<div id="s4block" class="block"></div>
-				<button type="down"></button>
-			<div id="s4" class="selection"></div>
-			<div id="s5block" class="block"></div>
-				<button type="down"></button>
-			<div id="s5" class="selection"></div>
+			<!--s5 end-->
+			<button type="submit" class="save">save</button>
 		</div>
+		<!--variation end-->
 		<!-- 화면 우측 '디스플레이 공간'' -->
 		<div id = display></div>
 	</div>

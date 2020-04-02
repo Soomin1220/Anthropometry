@@ -1,4 +1,135 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+#wrap{
+	width: 100%;
+	height: 100%;
+}
+#display{
+	width: 80%
+	height: 100%;
+}
+#variation{
+	width: 30%;
+	min-width: 440px;
+	height: auto;
+	max-height: 100%
+}
+#title{
+	box-sizing: border-box;
+	width: 99%;
+	height: 20%;
+	padding: 3%;
+	background-color: #0C1C57;
+	font-size: 25px;
+	color: #e5e5e5;
+	font-weight: bold;
 
+}
+.block{
+	box-sizing: border-box;
+	width: 99%;
+	height: 60px;
+	padding: 10px;
+	background-color: #e5e5e5;
+	margin-top: 5px;
+	overflow: hidden;
+}
+
+.clear{
+	box-sizing: border-box;
+	width: 57px;
+	height: 20px;
+	float: right;
+	margin-right: 10px;
+	text-align: center;
+	font-size: 10px;
+	color: #0C1C57;
+	font-weight: bold;
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+}
+/*삼각형이 아래로 향해있는 버튼id*/
+.down{
+	width: 0px;
+	height: 0px;
+	border-right: 12px solid transparent;
+	border-bottom: 12px solid #999999;
+	transform: rotate(-45deg);
+	float: right;
+}
+/*삼각형이 위로 향해있는 버튼id*/
+.up{
+	width: 0px;
+	height: 0px;
+	border-right: 12px solid transparent;
+	border-bottom: 12px solid #999999;
+	transform: rotate(135deg);
+	float: right;
+}
+#step_number{
+	font-size: 12px;
+	font-weight: bold;
+	color: #999999;
+}
+#step_name{
+	font-size: 17px;
+	font-weight: bold;
+	color: #0C1C57;
+	float: left;
+}
+.
+.selection{
+	box-sizing: border-box;
+	width: 99%;
+	height: auto;
+	padding: 3%;
+	border: 5px solid #e5e5e5;
+}
+.s1factor_title{
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+/*#gender{
+	width: 99%;
+}*/
+.s1_save{
+	box-sizing: border-box;
+	width: 57px;
+	height: 20px;
+	padding: auto;
+	float: right;
+	margin-right: 10px;
+	text-align: center;
+	font-size: 15px;
+	color: #0C1C57;
+	font-weight: bold;
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+	margin-bottom: 5px;
+}
+.save{
+	box-sizing: border-box;
+	width: 99%;
+	height: 15%;
+	padding: 3%;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #ffffff;
+	color: #0C1C57;
+	border: 5px solid #e5e5e5;
+	border-radius: 7px;
+	margin-top: 5px;
+}
+.save:hover{
+	background-color: #0C1C57;
+	border-color: #0C1C57;
+	color: #e5e5e5;
+}
 div.hidden {
   display: none;
 }
