@@ -27,7 +27,7 @@
 				<div class="clear">Clear All</div>
 				<div id = nationality>
 					<div class="s1factor_title"> Nationality </div>
-					<table>
+					<table style="margin-left: 10px;">
 						<tr>
 							<td><input type="checkbox" name="korea" value="0" class="nationality" onclick  = "nationality.multiChkCntry('korea', 'add')">Korea</td>
 							<td><input type="checkbox" name="china" value="1" class="nationality" onclick  = "nationality.multiChkCntry('china', 'add')" >China</td>
@@ -39,27 +39,27 @@
 				</div>
 				<div id= gender>
 					<div class="s1factor_title"> Gender </div>
-					<table>
+					<table style="margin-left: 10px;">
 						<tr>
 							<td><input type="checkbox" class="genderBox" value="male" onclick  = "gender.male_chk(); gender.genChk()">Male</td>
-							<td><input type="checkbox" class="genderBox" value="female" onclick  = "gender.female_chk();gender.genChk()">Female</td>
+							<td><input type="checkbox" class="genderBox" style="margin-left: 100px;" value="female" onclick  = "gender.female_chk();gender.genChk()">Female</td>
 						</tr>
 						<tr>
 							<div id = "genderPercent"> 
-								<td><input type="text" class = "genderPercentCheckBox" name="genderPercent"  value = 0% disabled = "true" ></td>
-								<td><input type="text" class = "genderPercentCheckBox" name="genderPercent"  value = 0% disabled = "true" ></td>
+								<td><input type="text" class = "genderPercentCheckBox" name="genderPercent" style="width: 45px; margin-left: 5px;" value = 0% disabled = "true" ></td>
+								<td><input type="text" class = "genderPercentCheckBox" name="genderPercent" style="width: 45px; margin-left: 100px;" value = 0% disabled = "true" ></td>
 						</tr>
 					</table>
 		
 				</div>
 				<div id = age>
 						<div class="s1factor_title"> Age </div>
-							<label> <input type = 'radio' name = 'selectOption' id = 'age_checkSelect' >선택	</label>
+							<label> <input type = 'radio' name = 'selectOption' id = 'age_checkSelect' style="margin-left: 20px;" >선택	</label>
 							<label> <input type = 'radio' name = 'selectOption'id = 'age_typeSelect'>직접입력</label>
 					<div id = byCheckBox>
 							 
 							<div id = "ageList" class = 'hidden'>
-								<table width="440">
+								<table>
 									<tr>
 										<td>Age:</td>	
 										<td><input type="checkbox" class="ageList" value="10대이하" onclick = "age.ageChk()" > 10대이하</td>
@@ -72,7 +72,7 @@
 								</table>	
 
 							 <div id = "agePercent" class = "hidden"> 
-							 	<table width="440">
+							 	<table>
 							 		<tr>
 							 			<td>(%):</td>
 							 			<td><input type="text" class = "agePercentCheckBox" name="agePercent"  value = 0% disabled = "true" ></td>
@@ -88,14 +88,15 @@
 					<!-- byCheckBox ends -->
 
 					<div id = byInputBox>
-								<div id = "ageRange" class = "hidden"> 
+								<div id = "ageRange" class = "hidden">
+
 									Age: 
-										<input type="text" name="ageRange" style = "width: 30px; margin: 17px"> ~
-										<input type="text" name="ageRange" style = "width: 30px; margin: 17px">
+										<input type="text" name="ageRange" style = "width: 30px; height: 13px; margin: 10px;"> ~
+										<input type="text" name="ageRange" style = "width: 30px; height: 13px; margin: 10px;">
 								</div>
 								<div id = "agePercentByOwn" class="hidden"> 
 										Percentage (%):
-										<input type="text" class = "agePercentTextBox" name="agePercentByOwn" style = "width: 30px; margin: 17px">
+										<input type="text" class = "agePercentTextBox" name="agePercentByOwn" style = "width: 30px; height: 13px;">
 
 								</div>						
 					</div>

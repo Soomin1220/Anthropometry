@@ -91,7 +91,7 @@ html {
 	font-size: 15px;
 	font-weight: bold;
 	margin-top: 10px;
-	margin-left: 10px;
+	margin-left: 20px;
 	margin-bottom: 5px;
 }
 /*#gender{
@@ -134,17 +134,16 @@ div.hidden {
   display: none;
 }
 
-	div.unhidden {
-  display: block;
+div.unhidden {
+	display: block;
 }
 
-	#agePercent .agePercentCheckBox {
+#agePercent .agePercentCheckBox {
 	width: 45px;
-	margin: 17px;
+	margin: 7px;
 }
 
-	#genderPercent .genderPercentCheckBox
-{
-	width: 30px; 
+#genderPercent .genderPercentCheckBox {
+	width: 5px; 
 	margin: 17px;
 }
